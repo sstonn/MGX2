@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "228753934029",
+    "firebase_url": "https://loginandsignup-f3a8c.firebaseio.com",
+    "project_id": "loginandsignup-f3a8c",
+    "storage_bucket": "loginandsignup-f3a8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228753934029:android:2e30a15fc86a54a0",
+        "android_client_info": {
+          "package_name": "com.hooray.mgx.loginandsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228753934029-3jt8gollbq2k42vdtbs0lo2nnor02voj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hooray.mgx.loginandsignup",
+            "certificate_hash": "070b4b85a4b71f8f0a6884227343fc473cb99c10"
+          }
+        },
+        {
+          "client_id": "228753934029-ts180laotcg6ko6vgc31sl1br9jnr5bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs4Nwldr-RgPPFH7qH_DFWhvZYlV3GO50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228753934029-ts180laotcg6ko6vgc31sl1br9jnr5bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "228753934029-1hun3n7v6idq7fdgoqnr2glb36552ba5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hooray.mgx.loginandsignup"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
