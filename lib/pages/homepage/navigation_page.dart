@@ -1,8 +1,8 @@
 import 'package:loginandsignup/pages/homepage/fancy_bottom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:loginandsignup/services/authentication.dart';
-import 'package:loginandsignup/pages/homepage/second_page.dart';
-import 'package:loginandsignup/pages/homepage/home_page.dart';
+import 'package:loginandsignup/pages/homepage/minipages/analys_page.dart';
+import 'package:loginandsignup/pages/homepage/minipages/home_page.dart';
 import 'package:loginandsignup/pages/login_signup_page.dart';
 class NavigationPage extends StatefulWidget {
   NavigationPage({this.auth});
@@ -84,11 +84,15 @@ class _NavigationPageState extends State<NavigationPage> {
           ),
           TabData(
               iconData: Icons.local_parking,
-              title: "Quản lý bãi"
+              title: "Bãi xe"
           ),
           TabData(
               iconData: Icons.supervised_user_circle,
               title: "Nhân viên"
+          ),
+          TabData(
+              iconData: Icons.info,
+              title: "Thông tin"
           ),
         ],
         initialSelection: 0,
@@ -116,22 +120,10 @@ class _NavigationPageState extends State<NavigationPage> {
           onSignedOut: _onSignedOut,
         );
       case 1:
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Text("This is the search page"),
-            RaisedButton(
-              child: Text(
-                "Start new page",
-                style: TextStyle(color: Colors.white),
-              ),
-              color: Theme.of(context).primaryColor,
-              onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => SecondPage()));
-              },
-            )
-          ],
+        return MyAnalysPage(
+          userId: _userId,
+          auth: widget.auth,
+          onSignedOut: _onSignedOut,
         );
       default:
         return Column(

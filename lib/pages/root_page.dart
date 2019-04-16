@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loginandsignup/pages/login_signup_page.dart';
 import 'package:loginandsignup/services/authentication.dart';
-import 'package:loginandsignup/pages/homepage/home_page.dart';
+import 'package:loginandsignup/pages/homepage/minipages/home_page.dart';
 import 'package:loginandsignup/pages/homepage/navigation_page.dart';
 
 class RootPage extends StatefulWidget {
